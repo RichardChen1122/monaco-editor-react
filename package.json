@@ -1,0 +1,113 @@
+{
+  "_from": "@monaco-editor/react@1.1.0",
+  "_id": "@monaco-editor/react@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-fffIvWubKx1c8i3hp0BRxYMwJIw=",
+  "_location": "/@monaco-editor/react",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@monaco-editor/react@1.1.0",
+    "name": "@monaco-editor/react",
+    "escapedName": "@monaco-editor%2freact",
+    "scope": "@monaco-editor",
+    "rawSpec": "1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "1.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@monaco-editor/react/download/@monaco-editor/react-1.1.0.tgz",
+  "_shasum": "7df7c8bd6b9b2b1d5cf22de1a74051c58330248c",
+  "_spec": "@monaco-editor/react@1.1.0",
+  "_where": "F:\\Dev\\siemens\\kpi\\kpi.scriptengine-web",
+  "author": {
+    "name": "suren_at"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": false
+        }
+      ]
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/SurenAt93/monaco-react/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Monaco editor wrapper for easy/one-line integration with React applications (e.g. powered by create-react-app) without need of webpack configuration files",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^8.0.1",
+    "babel-eslint": "9.x",
+    "babel-jest": "^24.8.0",
+    "eslint": "5.x",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.5.0",
+    "husky": "^2.4.1",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "homepage": "https://github.com/SurenAt93/monaco-react#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm run lint"
+    }
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/demo/"
+    ]
+  },
+  "keywords": [
+    "monaco",
+    "editor",
+    "react",
+    "vscode",
+    "code",
+    "text"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "name": "@monaco-editor/react",
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurenAt93/monaco-react.git"
+  },
+  "scripts": {
+    "build": "npx babel src --out-dir lib && cp ./src/index.d.ts ./lib/",
+    "lint": "npx eslint src",
+    "prepublish": "npm test && npm run lint && npm run build",
+    "test": "npx jest"
+  },
+  "types": "lib/index.d.ts",
+  "version": "1.1.0"
+}
