@@ -65,8 +65,9 @@ export default Editor;
 
 // Controlled Editor
 
-export type ControlledEditorOnChange = (ev: any, value: string | undefined) => string | undefined;
+export type ControlledEditorOnChange = (ev: any, value: string | undefined, editor?: any) => string | undefined;
 export type ControlledEditorOnMouseDown = (ev: any, editor: any) => void;
+export type ControlledEditorOnKeyDown = (ev: any, editor: any) => void;
 
 export interface ControlledEditorProps extends EditorProps {
   /**
@@ -78,6 +79,8 @@ export interface ControlledEditorProps extends EditorProps {
   onChange?: ControlledEditorOnChange;
 
   onMouseDown?: ControlledEditorOnMouseDown;
+
+  onKeyDown?: ControlledEditorOnKeyDown;
 }
 
 declare const ControlledEditor: React.FC<ControlledEditorProps>;
