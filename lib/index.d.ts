@@ -67,7 +67,7 @@ export default Editor;
 
 export type ControlledEditorOnChange = (ev: any, value: string | undefined, editor?: any) => string | undefined;
 export type ControlledEditorOnMouseDown = (ev: any, editor: any) => void;
-export type ControlledEditorOnKeyDown = (ev: any, editor: any) => void;
+export type ControlledEditorOnKeyDown = (ev: any) => void;
 
 export interface ControlledEditorProps extends EditorProps {
   /**
